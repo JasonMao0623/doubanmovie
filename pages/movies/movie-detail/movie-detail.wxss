@@ -1,0 +1,90 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+.movie-detail-container{
+    display: flex;
+    flex-direction:column;
+}
+.banner{
+    position: relative;
+}
+.bg-img{
+    width: 100%;
+    height:320rpx;
+    opacity:0.6;
+    background-color:cornflowerblue;
+}
+.banner-title{
+    color: white;
+    font-size:40rpx;
+    font-weight: bloder;
+    position: absolute;
+    top: 70rpx;
+    left: 50rpx;
+}
+.year{
+    color: white;
+    font-size:30rpx;
+    position: absolute;
+    top: 160rpx;
+    left: 50rpx;
+}
+.banner-text{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    top: 250rpx;
+    left: 50rpx;
+    font-size: 25rpx;
+}
+.banner-text text{
+    margin-right: 15rpx;
+}
+.text1{
+    color: red;
+}
+.text2{
+    color:black;
+}
+.banner-img{
+    position: absolute;
+    right: 40rpx;
+    width:200rpx;
+    height: 270rpx;
+    top: 155rpx;
+}
+.detail-container{
+    width: 100%;
+    height: 320rpx;
+    border-bottom: solid 1px gray;
+    font-size:28rpx;
+}
+.detail-container-title{
+    color: silver; 
+    margin-top:100rpx;
+    margin-left:50rpx;
+    line-height: 90rpx;
+}
+.detail-container view{
+    margin-bottom:10rpx;
+    margin-left:50rpx;
+}
+.right{
+    margin-left: 50rpx;
+    color: black;
+    font-weight: bold;
+}
+.synopsis-container{
+    width: 100%;
+    height: 320rpx;
+    border-bottom: solid 1px gray;
+    font-size:28rpx;
+}
+.synopsis-title{
+    margin-left: 50rpx;
+    margin-top: 35rpx;
+}
+.synopsis{
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+    line-height: 35rpx;
+    width:650rpx;
+}

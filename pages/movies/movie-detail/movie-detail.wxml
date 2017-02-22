@@ -1,0 +1,47 @@
+
+<!--pages/movies/movie-detail/movie-detail.wxml-->
+<view class="movie-detail-container">
+  <view class="banner">
+    <view class="bg-img"></view>
+    <text class="banner-title">{{movieData.title}}</text>
+    <text class="year">{{movieData.country}}·{{movieData.year}}</text>
+    <view class="banner-text">
+      <text class="text1">{{movieData.collect_count}}</text>
+      <text class="text2">人喜欢</text>
+      <text class="text1">{{movieData.comments_count}}</text>
+      <text class="text2">条评论</text>
+    </view>
+    <image class="banner-img" src="{{movieData.image}}"></image>
+  </view>
+  <view class="detail-container">
+    <text class="detail-container-title">{{movieData.title}}</text>
+    <view>
+      <text class="left">评分</text>
+      <text class="right">{{movieData.average}}</text>
+    </view>
+    <view>
+      <text class="left">导演</text>
+      <block wx:for="{{movieData.directors}}">
+        <text class="right">{{item.name}}</text>
+      </block>
+    </view>
+    <view>
+      <text class="left">影人</text>
+      <block wx:for="{{movieData.casts}}">
+        <text class="right">{{item.name}}</text>
+      </block>
+    </view>
+    <view>
+      <text class="left">类型</text>
+      <text class="right">{{movieData.genres}}</text>
+    </view>
+  </view>
+  <view class="synopsis-container">
+    <view class="synopsis-title">
+      <text>剧情简介</text>
+    </view>
+    <view class="synopsis">
+      <text>{{movieData.summary}}</text>
+    </view>
+  </view>
+</view>

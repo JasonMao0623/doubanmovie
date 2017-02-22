@@ -1,0 +1,10 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieGirdTemplate">
+  <view class="more-movie-container">
+    <block wx:for="{{movies}}" wx:for-item="movie">
+      <view class="more-movie">
+        <template is="movieTemplate" data="{{...movie}}" />
+      </view>
+    </block>
+  </view>
+</template>

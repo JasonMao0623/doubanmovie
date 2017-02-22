@@ -1,0 +1,9 @@
+
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image src="/images/4.png" style="height:200rpx;width:200rpx;" class="user-logo"></image>
+  <text class="user-name">你好，Jason.Mao</text>
+  <view class="moto-container" catchtap="onTap">
+    <text class="moto">开启微信小程序之旅</text>
+  </view>
+</view>
